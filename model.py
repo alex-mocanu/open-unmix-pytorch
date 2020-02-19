@@ -68,7 +68,7 @@ class Spectrogram(nn.Module):
     def forward(self, stft_f):
         """
         Input: complex STFT
-            (nb_samples, nb_bins, nb_frames, 2)
+            (nb_samples, nb_channels, nb_bins, nb_frames, 2)
         Output: Power/Mag Spectrogram
             (nb_frames, nb_samples, nb_channels, nb_bins)
         """
